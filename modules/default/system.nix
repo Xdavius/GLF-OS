@@ -60,7 +60,7 @@
     };
     
     programs.nix-ld.enable = true;
-
+    programs.nix-ld.libraries = with pkgs; [ libGL xorg.libX11 xorg.libXrandr xorg.libXxf86vm xorg.libXi xorg.libXcursor xorg.libXinerama xorg.libXrender xorg.libXfixes libxkbcommon xorg.libSM xorg.libICE pkgs.linuxPackages.nvidia_x11 ];
   };
 
 }
